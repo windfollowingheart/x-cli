@@ -6,7 +6,7 @@
 
 ### 1. 配置认证
 
-编辑 `cli/auth.json`，填入你的认证信息：
+编辑 `auth.json`，填入你的认证信息：
 
 ```json
 {
@@ -25,16 +25,16 @@
 
 ```bash
 # 获取单个用户推文
-python cli/main.py fetch PyTorch
+python main.py fetch PyTorch
 
 # 获取多个用户推文
-python cli/main.py fetch PyTorch elonmusk
+python main.py fetch PyTorch elonmusk
 
 # 指定时间范围
-python cli/main.py fetch PyTorch --since 2026-04-01 --until 2026-04-05
+python main.py fetch PyTorch --since 2026-04-01 --until 2026-04-05
 
 # 指定输出文件和数量
-python cli/main.py fetch PyTorch --count 50 --output tweets.json
+python main.py fetch PyTorch --count 50 --output tweets.json
 ```
 
 ## 命令说明
@@ -47,7 +47,7 @@ python cli/main.py fetch PyTorch --count 50 --output tweets.json
 ## fetch 子命令
 
 ```bash
-python cli/main.py fetch USERNAME [USERNAME...] [选项]
+python main.py fetch USERNAME [USERNAME...] [选项]
 
 可选参数:
   --since DATE          起始日期 (YYYY-MM-DD)
@@ -59,7 +59,7 @@ python cli/main.py fetch USERNAME [USERNAME...] [选项]
 ## user 子命令
 
 ```bash
-python cli/main.py user USERNAME
+python main.py user USERNAME
 ```
 
 ## 输出格式
